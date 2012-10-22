@@ -33,7 +33,7 @@ $(function() {
             if ($element.text().match(reg)) {
               return $element;
             }  
-          } else if ($element.attr("title").match(reg)) {
+          } else if (typeof $element.attr("title") !== 'undefined' && $element.attr("title").match(reg)) {
             return $element;
           }
         })
