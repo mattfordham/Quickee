@@ -125,5 +125,5 @@ function goToSelection () {
 }
 
 function addQuickeeToDom () {
-  $('body').append('<div id="quickee"><form id="quickee-form"><input type="text" id="quickee-search"></form><ul id="quickee-results"></ul></div>')
+  $('body').prepend('<div id="quickee"><form id="quickee-form"><input type="text" id="quickee-search"></form><ul id="quickee-results"></ul></div>')
 }
