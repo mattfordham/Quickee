@@ -62,7 +62,7 @@ $(function() {
   $(window).keydown(function (e){
     
     // Open Quickee
-    if (e.keyCode == 81 && quickeeOpen == false && !$("#mainWrapper input").is(":focus")) {
+    if (e.keyCode == 81 && quickeeOpen == false && !$("#mainWrapper input, #mainWrapper textarea").is(":focus")) {
       e.preventDefault();
       openQuickee()
     };
